@@ -17,8 +17,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Auth0Provider
-    domain="dev-dy3g0lo4ipgnfm78.us.auth0.com"
-    clientId="zAkR0NEPxi6r8qWj3LVsHX1Xsy1DdYCH"
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
     authorizationParams={{
       redirect_uri: window.location.origin,
     }}
