@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { formatPrice } from "../utils/helpers";
 import { Link } from "react-router-dom";
-const ListView = ({ products }) => {
+const ListViews = ({ products }) => {
   return (
     <Wrapper>
       {products.map((product) => {
@@ -63,4 +63,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default ListView;
+export default ListViews;
